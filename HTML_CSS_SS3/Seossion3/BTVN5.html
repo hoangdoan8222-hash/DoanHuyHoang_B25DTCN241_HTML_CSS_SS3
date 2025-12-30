@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form đăng ký thành viên nhóm</title>
+
+<style>
+    body{
+        font-family: Arial;
+    }
+
+    form{
+        width: 600px;
+        margin: auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px 30px;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .row{
+        margin-bottom: 12px;
+    }
+
+    label{
+        display: inline-block;
+        width: 170px;
+        vertical-align: top;
+    }
+
+    input, select, textarea{
+        width: 300px;
+        padding: 5px;
+    }
+
+    textarea{
+        height: 60px;
+        resize: vertical;
+    }
+
+    .submit-btn{
+        padding: 8px 16px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    input[type="color"]{
+    width: 40px;
+    height: 25px;
+    padding: 0;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<h2>ĐĂNG KÝ THÀNH VIÊN NHÓM</h2>
+
+<form>
+
+    <div class="row">
+        <label>Họ và tên:</label>
+        <input type="text">
+    </div>
+
+    <div class="row">
+        <label>Ngày sinh:</label>
+        <input type="date">
+    </div>
+
+    <div class="row">
+        <label>Giới tính:</label>
+        <input type="radio" name="gt"> Nam
+        <input type="radio" name="gt"> Nữ
+    </div>
+
+    <div class="row">
+        <label>Số điện thoại:</label>
+        <input type="tel">
+    </div>
+
+    <div class="row">
+        <label>Email:</label>
+        <input type="email">
+    </div>
+
+    <div class="row">
+        <label>Địa chỉ:</label>
+        <textarea></textarea>
+    </div>
+
+    <div class="row">
+        <label>Vai trò trong nhóm:</label>
+        <select>
+            <option>Thành viên</option>
+            <option>Trưởng nhóm</option>
+            <option>Thư ký</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <label>Sở thích:</label>
+        <input type="text">
+    </div>
+
+    <div class="row">
+        <label>Kỹ năng:</label>
+        <textarea></textarea>
+    </div>
+
+    <div class="row">
+        <label>Thời gian rảnh:</label>
+        <input type="checkbox"> Sáng
+        <input type="checkbox"> Chiều
+        <input type="checkbox"> Tối
+    </div>
+
+    <div class="row">
+        <label>Lý do tham gia nhóm:</label>
+        <textarea></textarea>
+    </div>
+
+    <div class="row">
+        <label>Màu yêu thích:</label>
+        <input type="color">
+    </div>
+
+    <div class="row">
+        <label>Đăng ký nhận bản tin:</label>
+        <input type="checkbox"> Có
+    </div>
+
+    <div class="row">
+        <label>Nhận thông báo qua email:</label>
+        <input type="radio" name="tt"> Email
+        <input type="radio" name="tt"> SMS
+    </div>
+
+    <div class="row">
+        <label></label>
+        <button type="submit" class="submit-btn">Đăng ký thành viên</button>
+    </div>
+
+</form>
+
+</body>
+</html>
